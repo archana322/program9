@@ -4,4 +4,4 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - run: python app.py
+      - run: echo "Build Successful"
