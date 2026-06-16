@@ -7,4 +7,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - run: echo "Build Successful"
+      - users: actions/checkout@v4
+      
+      - users: actions/setup-python@v5
+        with:
+         python-version:'3.12'
+
+        -run: python app.py
+      
