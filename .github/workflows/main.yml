@@ -1,8 +1,10 @@
 name: Devops Pipeline
+
 on: [push]
 
 jobs:
   build:
-     run-on: windows-latest
-     steps:
-       -run: echo "Build Successful"
+    runs-on: windows-latest
+
+    steps:
+      - run: echo "Build Successful"
